@@ -1,0 +1,25 @@
+arraySize = int(input("how many elements will be added to the array? "))
+
+numberArray = []
+
+def getElements(arg):
+    print("enter elements for array:")
+    startCount = 0
+    while startCount < arraySize:
+        userInput = int(input())
+        arg.append(userInput)
+        startCount += 1
+        #end of while loop
+#end of method 
+
+def AddElements(arg):
+    sum = 0
+    for y in arg:
+        sum += y
+    #end of for loop
+    print("the sum of elements is " + str(sum)) 
+#end of method
+
+#calling methods:
+getElements(numberArray)
+AddElements(numberArray)
